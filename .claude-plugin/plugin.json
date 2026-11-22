@@ -1,0 +1,8 @@
+{
+  "name": "engager-scoring",
+  "version": "1.0.0",
+  "description": "Nine Claude Code skills that turn people who engage with LinkedIn posts (yours and your competitors') into a scored call list and an outreach queue.",
+  "author": { "name": "Ben Reed" },
+  "homepage": "https://revyops.com",
+  "license": "MIT"
+}

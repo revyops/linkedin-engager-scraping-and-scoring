@@ -1,0 +1,13 @@
+{
+  "name": "revyops-engagers",
+  "owner": { "name": "Ben Reed" },
+  "metadata": { "description": "Turn LinkedIn post engagers into a scored call list with Claude Code." },
+  "plugins": [
+    {
+      "name": "engager-scoring",
+      "source": "./",
+      "description": "Nine Claude Code skills: pull engagers from your posts and your competitors' posts, sort them, score them, and queue the best for outreach.",
+      "version": "1.0.0"
+    }
+  ]
+}
