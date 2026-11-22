@@ -23,14 +23,14 @@ Reads who reacted to and commented on the user's own LinkedIn posts, and saves o
    - `includeReposts`: false, `includeQuotePosts`: true
    - `scrapeComments`: true, `maxComments`: 1000
    - `scrapeReactions`: true, `maxReactions`: 1000
-   - Start it with `POST /v2/acts/<actor>/runs?maxTotalChargeUsd=<cap for this run>` and poll the run until it ends. The sync endpoint times out after 5 minutes, so don't use it for big pulls.
+   - Set a spend limit on every run (`maxTotalChargeUsd`). Start the run, then check back until it ends. Big pulls take longer than 5 minutes, so don't wait on one open request.
 3. **Save the raw pull** in `engagers/raw/<date>-own.json` before doing anything else. Raw data lets you rebuild later without paying again.
 4. **Build rows.** One row per reaction and per comment:
    `{ post_id, post_url, post_date, type: "comment" | "reaction", reaction_type, comment_text, comment_date, linkedin_url, name, headline }`
    - Comments carry their own date. Reactions have no date, so use today.
    - Skip the user's own comments.
    - Skip company pages and private members. Count them in the report.
-5. **Never miss a comment.** For each post, compare the comments you read with LinkedIn's comment count on the post. If they differ, name the post in the report. Do not load a post that shows engagement on LinkedIn but returned zero people: the scraper's output may have changed.
+5. **Never miss a comment.** For each post, compare the comments you read with LinkedIn's comment count. If they differ, name the post in the report. If a post shows engagement on LinkedIn but the pull found nobody, don't load it. The scraper may have changed.
 6. **Late comments.** Once a week, also pull comments only (`scrapeReactions: false`) for posts 8 to 30 days old.
 7. **Save** the rows to `engagers/rows/<date>-own.json` and hand them to step 3 (engager-lookup) or straight to step 4 (one-record).
 

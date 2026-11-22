@@ -14,7 +14,7 @@ A comment takes effort. A like takes one tap. So every commenter stays, and reac
 Ask the user three questions and save the answers in `engagers/filter.json`:
 
 1. **Who buys from you?** Titles that sign or decide. A typical B2B start: founder, co-founder, owner, CEO, president, managing director or partner, CRO, CMO, VP / head / director of sales, marketing, growth or revenue, RevOps, sales operations, business development manager.
-2. **Who never buys?** The anti-ICP. Always: student, intern, retired, seeking or open to work, recruiter. Add the user's own: for example agencies that resell what you sell, or people who build it themselves.
+2. **Who never buys?** Always: student, intern, retired, seeking or open to work, recruiter. Add the user's own: for example agencies that resell what you sell, or people who build it themselves.
 3. **Who is a competitor?** That list lives in step 2's `competitors.json`. Step 6 handles them.
 
 ## Steps

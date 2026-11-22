@@ -26,5 +26,5 @@ Most suppression lists drop people by their *company*. But most commenters arriv
 
 - **Enemy is a company status, never a person status.** It follows the company, so a person who changes jobs leaves it behind.
 - **A wrong enemy costs more than a missed one.** A missed vendor costs one message. A wrong enemy loses a buyer for good, and can break a filter for everyone like them.
-- Some brands are claimed on profiles by people who don't work there ("Certified Acme Partner", "Acme Expert"). Never link from those words. For those brands, use the company's own employee list instead.
+- Some people put a brand on their profile without working there ("Certified Acme Partner", "Acme Expert"). Never link from those words. For those brands, use the company's own employee list.
 - Never unlink or mark anyone because of a match you doubt. Note it for the user.

@@ -18,7 +18,7 @@ Your competitors' posts are a bigger pond than yours. The people who comment the
 
 ## Set it up
 
-Ask the user for up to ten competitors. For each one, ask for the founder's profile and the company page. Add `aliases` for names people write in headlines ("Acme", "AcmeCRM"). If a name is a common word ("Copper", "Zero"), match only the full name or the domain, never the bare word.
+Ask the user for up to ten competitors. For each one, ask for the founder's profile and the company page. Add `aliases` for names people write in headlines ("Acme", "AcmeCRM"). If a name is also a common word (say a company called "Summit"), match only the full name ("Summit CRM") or the domain, never the bare word.
 
 ## Steps
 

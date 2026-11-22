@@ -13,7 +13,7 @@ Gives every person one number that says how warm they are *now*. Points come fro
 
 Change these to fit. Write the final version in `engagers/scores.md` so you remember why.
 
-| Activity | Points | Fades to half in |
+| Activity | Points | Loses half its points after |
 |---|---|---|
 | Comment on your post | 10 | 30 days |
 | Reaction on your post | 3 | 14 days |

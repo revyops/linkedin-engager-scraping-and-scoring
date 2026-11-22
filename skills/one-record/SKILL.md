@@ -19,7 +19,7 @@ The same person comments on your post on Monday and reacts to a competitor's pos
 1. **Clean the URL.** Lower case, `https://www.linkedin.com/in/<slug>/`, no query string. Never use a coded `/in/ACoAA...` link (step 3 resolves those).
 2. **Find the person** by LinkedIn URL. If there is none, create one by URL, with first name, last name and headline.
 3. **Log one activity per engagement**: comment or reaction, with the post link, post id, post date, reaction type or comment text, the headline at the time, and the date.
-4. **Tag it.** Set UTMs on each activity so you can tell the ponds apart later:
+4. **Tag it.** Add tracking tags (UTMs) to each activity, so later you can tell which pond a person came from:
    - source `linkedin`, medium `social`
    - campaign `linkedin-organic-post-engagers` (your posts) or `linkedin-competitor-post-engagers` (theirs)
    - content = the post id, term = `comment` or `reaction`
