@@ -34,7 +34,7 @@ Nine skills that run as one flow, in this order:
 **Claude Code plugin (recommended).** In Claude Code, run:
 
 ```
-/plugin marketplace add revyops/linkedin-engager-scoring
+/plugin marketplace add revyops/linkedin-engager-scraping-and-scoring
 /plugin install engager-scoring@revyops-engagers
 ```
 
